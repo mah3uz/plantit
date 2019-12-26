@@ -37,6 +37,12 @@ module.exports = {
                 pageContextProperty: `menus`,
                 menus: require('./src/data/menus.json'),
             }
-        }
+        },
+        {
+            resolve: `gatsby-plugin-lodash`,
+            options: {
+                // disabledFeatures: [`shorthands`, `cloning`],
+            },
+        },
     ]
 };
